@@ -1,0 +1,10 @@
+<ng-container *ngIf="loading">
+    <p>
+        LOADING...
+    </p>
+</ng-container>
+
+<ng-container *ngIf="!loading">
+    <h2>{{pokemonSerice.getPokemonFrenchName(current_pokemon_specie)}}</h2>
+    <img src="{{pokemonSerice.getPokemonSpriteUrl(current_pokemon)}}" />
+</ng-container>
